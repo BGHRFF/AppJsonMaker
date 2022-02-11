@@ -1,0 +1,45 @@
+{
+    "name": "Heroku App.json hazırlayan bot",
+    "description": "Heroku app.json hazırlamaq üçün bot",
+    "keywords": [
+        "telegram",
+        "bot",
+        "heroku",
+        "app.json",
+        "app",
+        "json",
+        "maker",
+        "generator"
+    ],
+    "repository": "https://github.com/BGHRFF/AppJsonMaker",
+    "website": "bybaghirov.com",
+    "success_url": "https://t.me/RamileBot",
+    "env": {
+        "API_ID": {
+            "description": "my.telegram.org adresindən alın"
+        },
+        "API_HASH": {
+            "description": "my.telegram.org adresindən alın"
+        },
+        "BOT_TOKEN": {
+            "description": "https://t.me/BotFather adresindən alın"
+        },
+        "SESSION_NAME": {
+            "description": "Botun HərHansı Sessiya kodu",
+            "required": "False",
+            "value": "AppJson"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
